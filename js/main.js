@@ -64,3 +64,13 @@ function duplicateEncode(str) {
 }
 //test by printing this in the console
 console.log(duplicateEncode('BaRaban'));
+
+// Make a program that filters a list of strings and
+// returns a list with only your friends name in it.
+// If a name has exactly 4 letters in it,
+
+function friend(friends) {
+  return friends.filter(list => list.length === 4)
+}
+
+console.log(friend([]))
