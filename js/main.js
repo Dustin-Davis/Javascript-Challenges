@@ -91,3 +91,23 @@ function rowSumOddNumbers(n) {
 }
 
 console.log(rowSumOddNumbers())
+
+// There is an array with some numbers
+// All numbers are equal except for one
+// [1, 1, 1, 2, 1, 1] === 2
+
+function findUniq(arr) {
+  //take first element
+  let strayChar = arr[0];
+
+  // see if it is different from the next 2
+  if (strayChar !== arr[1] && strayChar !== arr[2]) return strayChar;
+
+  // if not find the first value that is different
+  for (let i = 1; i < arr.length; i++) {
+    if (strayChar !== arr[i])
+      return arr[i];
+  }
+}
+
+console.log(findUniq())
