@@ -129,3 +129,11 @@ var isSquare = function (n) {
   return Math.sqrt(n) % 1 === 0
 }
 console.log(isSquare())
+
+// Complete the method that takes a boolean value and
+// return a "Yes" string for true,
+// or a "No" string for false.
+
+function boolToWord(bool) {
+  return bool ? 'Yes' : 'No';
+}
