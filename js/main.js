@@ -153,3 +153,7 @@ function filter_list(l) {
     }
   } return filteredArr
 }
+//smaller filter function
+function filter(l) {
+  return l.filter(x => typeof x == "number")
+}
